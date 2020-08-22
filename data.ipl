@@ -1,0 +1,78 @@
+data@[Dependants1:"LI Xiaoyu", Dependants2:"Dong Jiahi"]
+where
+		dimension country:{"United_states", "Australia", "Belgium", "Germany", "Japan", "Lithuania", "Netherland", "South_Korea", "Spain", "Sweden", "The_United_Kingdom"};
+		dimension year:{"2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"};
+		dimension month:{"JAN", "FEB", "MAR", "APR", "MAY", "JUN", "Jul", "AUG", "SEP", "OCT", "NOV", "DEC"};
+		dimension victim:{"V1", "V2", "V3", "V4", "V5", "V6", "V7", "V8", "V9", "V10", "V11", "V12", "V13", "V14", "V15", "V16", "V17", "V18", "V19", "V20", "V21", "V22",
+ "V23", "V24", "V25"};
+		dimension stolen_data:{"trade_secrets", "intelectual_property", "valuable_business_information", "high_technology_industries", "ransom"};
+		
+evidential statement es_data = {os_trade_secrets, os_intelectual_property, os_valuable_business_information, os_high_technology_industries, os_ransom};
+evidential statement es_countries = {os_United_states, os_Australia, 
+		os_Australia, os_Belgium, os_Germany, os_Japan, os_Lithuania, os_Netherland, 
+os_South_Korea, os_Spain, os_Sweden, os_The_United_Kingdom};	
+
+observation sequence os_United_states =
+{
+	([Dependants1:"LI Xiaoyu", Dependants2:"Dong Jiahi", country:"United_states", victim:"V1", month:"DEC", year:"2014", stolen_data:"intelectual_property"], 1, 0, 1.0),
+	([Dependants1:"LI Xiaoyu", Dependants2:"Dong Jiahi", country:"United_states", victim:"V2", month:"JAN", year:"2015", stolen_data:"trade_secrets"], 1, 0, 1.0),
+	([Dependants1:"LI Xiaoyu", Dependants2:"Dong Jiahi", country:"United_states", victim:"V3", month:"MAR", year:"2015", stolen_data:"valuable_business_information"], 1, 0, 1.0),
+	([Dependants1:"LI Xiaoyu", Dependants2:"Dong Jiahi", country:"United_states", victim:"V4", month:"APR", year:"2015", stolen_data:"trade_secrets"], 1, 0, 1.0),
+	([Dependants1:"LI Xiaoyu", Dependants2:"Dong Jiahi", country:"United_states", victim:"V5", month:"SEP", year:"2015", stolen_data:"valuable_business_information"], 1, 0, 1.0),
+	([Dependants1:"LI Xiaoyu", Dependants2:"Dong Jiahi", country:"United_states", victim:"V6", month:"MAR", year:"2017", stolen_data:"valuable_business_information"], 1, 0, 1.0),
+	([Dependants1:"LI Xiaoyu", Dependants2:"Dong Jiahi", country:"United_states", victim:"V7", month:"MAR", year:"2018", stolen_data:"valuable_business_information"], 1, 0, 1.0),
+	([Dependants1:"LI Xiaoyu", Dependants2:"Dong Jiahi", country:"United_states", victim:"V8", month:"APR", year:"2018", stolen_data:"intelectual_property"], 1, 0, 1.0),
+	([Dependants1:"LI Xiaoyu", Dependants2:"Dong Jiahi", country:"United_states", victim:"V9", month:"NOV", year:"2018", stolen_data:"intelectual_property"], 1, 0, 1.0),
+	([Dependants1:"LI Xiaoyu", Dependants2:"Dong Jiahi", country:"United_states", victim:"V10", month:"FEB", year:"2019", stolen_data:"trade_secrets"], 1, 0, 1.0),
+	([Dependants1:"LI Xiaoyu", Dependants2:"Dong Jiahi", country:"United_states", victim:"V11", month:"FEB", year:"2019", stolen_data:"trade_secrets"], 1, 0, 1.0),
+	([Dependants1:"LI Xiaoyu", Dependants2:"Dong Jiahi", country:"United_states", victim:"V12", month:"FEB", year:"2019", stolen_data:"valuable_business_information"], 1, 0, 1.0),
+	([Dependants1:"LI Xiaoyu", Dependants2:"Dong Jiahi", country:"United_states", victim:"V13", month:"MAR", year:"2019", stolen_data:"valuable_business_information"], 1, 0, 1.0),
+	};
+	
+observation sequence os_Netherland =	
+{
+	([Dependants1:"LI Xiaoyu",Dependants2:"Dong Jiahi",country:"Netherland", victim:"V14", month:"FEB", year:"2016", stolen_data:"valuable_business_information"], 1, 0, 1.0),
+	([Dependants1:"LI Xiaoyu",Dependants2:"Dong Jiahi",country:"Netherland", victim:"V21", month:"APR", year:"2019", stolen_data:"intelectual_property"], 1, 0, 1.0),
+};
+
+observation sequence os_Sweden =	
+{	
+	([Dependants1:"LI Xiaoyu",Dependants2:"Dong Jiahi",country:"Netherland", victim:"V15", month:"MAR", year:"2017", stolen_data:"valuable_business_information"], 1, 0, 1.0),
+};
+observation sequence os_Lithuania =	
+{
+	([Dependants1:"LI Xiaoyu",Dependants2:"Dong Jiahi",country:"Lithuania", victim:"V16", month:"APR", year:"2017", stolen_data:"intelectual_property"], 1, 0, 1.0),
+};
+observation sequence os_Germany =	
+{
+	([Dependants1:"LI Xiaoyu",Dependants2:"Dong Jiahi",country:"Germany", victim:"V17", month:"MAY", year:"2017", stolen_data:"intelectual_property"], 1, 0, 1.0),
+	([Dependants1:"LI Xiaoyu",Dependants2:"Dong Jiahi",country:"Germany", victim:"V18", month:"APR", year:"2017", stolen_data:"trade_secrets"], 1, 0, 1.0),
+
+};
+observation sequence os_Belgium =	
+{
+	([Dependants1:"LI Xiaoyu",Dependants2:"Dong Jiahi",country:"Belgium", victim:"V19", month:"MAR", year:"2019", stolen_data:"intelectual_property"], 1, 0, 1.0),
+	([Dependants1:"LI Xiaoyu",Dependants2:"Dong Jiahi",country:"Belgium", victim:"V20", month:"FEB", year:"2019", stolen_data:"valuable_business_information"], 1, 0, 1.0),
+
+};
+observation sequence os_South_Korea =	
+{
+	([Dependants1:"LI Xiaoyu",Dependants2:"Dong Jiahi",country:"South_Korea", victim:"V22", month:"JUN", year:"2019", stolen_data:"trade_secrets"], 1, 0, 1.0),
+	
+};
+observation sequence os_Australia =	
+{
+	([Dependants1:"LI Xiaoyu",Dependants2:"Dong Jiahi",country:"Australia", victim:"V23", month:"JAN", year:"2020", stolen_data:"intelectual_property"], 1, 0, 1.0),
+};
+observation sequence os_Spain =	
+{
+	([Dependants1:"LI Xiaoyu",Dependants2:"Dong Jiahi",country:"Spain", victim:"V24", month:"MAR", year:"2017", stolen_data:"intelectual_property"], 1, 0, 1.0),
+};
+observation sequence os_The_United_Kingdom =	
+{
+	([Dependants1:"LI Xiaoyu",Dependants2:"Dong Jiahi",country:"The_United_Kingdom", victim:"V25", month:"APR", year:"2020", stolen_data:"valuable_business_information"], 1, 0, 1.0),
+	
+};
+	
+	
+end	
